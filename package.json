@@ -1,8 +1,8 @@
 {
   "name": "nubank",
-  "productName": "nubank",
+  "productName": "Nubank",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Nubank desktop application.",
   "main": ".webpack/main",
   "scripts": {
     "dev": "electron-forge start",
@@ -12,7 +12,7 @@
     "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
-  "author": "victor",
+  "author": "Victor Augusto Ferreira",
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0",
@@ -31,6 +31,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.0.0",
     "electron": "21.2.2",
+    "electron-wix-msi": "^5.0.0",
     "eslint": "^8.0.1",
     "eslint-plugin-import": "^2.25.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",

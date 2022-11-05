@@ -15,7 +15,12 @@ const config: ForgeConfig = {
   },
   rebuildConfig: {},
   makers: [
-    new MakerSquirrel({}),
+    new MakerSquirrel({
+      setupMsi: "Nubank.msi",
+      setupExe: "Nubank.exe",
+      setupIcon: path.join(__dirname, "src/assets/icon.ico"),
+      iconUrl: path.join(__dirname, "src/assets/icon.ico"),
+    }),
     new MakerZIP({}, ["darwin"]),
     new MakerRpm({}),
     new MakerDeb({}),
