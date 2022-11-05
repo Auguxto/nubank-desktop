@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
+import LoadingScreen from "./screens/Loading";
+
 import TitleBar from "./components/TitleBar";
 
 import "./index.css";
@@ -11,7 +13,7 @@ const Navigation: React.FC = () => {
     <HashRouter>
       <TitleBar />
       <Routes>
-        <Route />
+        <Route path="/" element={<LoadingScreen />} />
       </Routes>
     </HashRouter>
   );
