@@ -1,7 +1,13 @@
 import React from "react";
 
+import * as S from "./styles";
+
 const HomeScreen: React.FC = () => {
-  return <div>Home</div>;
+  return (
+    <S.Container>
+      <S.Avatar />
+    </S.Container>
+  );
 };
 
 export default HomeScreen;
